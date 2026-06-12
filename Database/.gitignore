@@ -1,0 +1,13 @@
+# Temporary database backups and dumps
+*.bak
+*.tmp
+*.sql.gz
+*~
+
+# Environment or sensitive configs
+.env
+Seed.sql
+# Editor directories and OS files
+.vscode/
+.idea/
+.DS_Store
