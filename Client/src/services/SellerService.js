@@ -1,4 +1,4 @@
-import api from './api.js';
+import api from './Api.js';
 
 /**
  * SellerService — wraps /api/seller endpoints (Seller JWT required)

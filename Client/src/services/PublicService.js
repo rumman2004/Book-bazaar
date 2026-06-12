@@ -1,4 +1,4 @@
-import api from './api.js';
+import api from './Api.js';
 
 /**
  * PublicService — wraps /api/public endpoints (no auth required)

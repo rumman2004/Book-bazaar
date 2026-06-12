@@ -1,4 +1,4 @@
-import api from './api.js';
+import api from './Api.js';
 
 /**
  * Auth Service — wraps /api/auth endpoints

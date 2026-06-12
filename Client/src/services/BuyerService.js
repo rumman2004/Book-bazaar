@@ -1,4 +1,4 @@
-import api from './api.js';
+import api from './Api.js';
 
 /**
  * BuyerService — wraps /api/buyer endpoints (Buyer JWT required)

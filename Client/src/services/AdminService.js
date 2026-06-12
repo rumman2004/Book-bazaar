@@ -1,4 +1,4 @@
-import api from './api.js';
+import api from './Api.js';
 
 /**
  * AdminService — wraps /api/admin endpoints (Admin JWT required)

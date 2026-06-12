@@ -43,7 +43,7 @@ const AllBuyer = lazy(() => import('../pages/admin/AllBuyer.jsx'));
 const AllSeller = lazy(() => import('../pages/admin/AllSeller.jsx'));
 const AdminAllProducts = lazy(() => import('../pages/admin/AllProducts.jsx'));
 const AdminOrders = lazy(() => import('../pages/admin/ActivityLog.jsx'));
-const Leaderboard = lazy(() => import('../pages/admin/Leaderboard.jsx'));
+const Leaderboard = lazy(() => import('../pages/admin/LeaderBoard.jsx'));
 const Coupons = lazy(() => import('../pages/admin/Coupons.jsx'));
 
 // ─── FALLBACK LOADER ──────────────────────────────────────
