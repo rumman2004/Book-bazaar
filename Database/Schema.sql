@@ -87,6 +87,14 @@ CREATE TABLE book_categories (
 -- 4. TRANSACTIONS & CART
 -- ==========================================
 
+CREATE TABLE coupons (
+    id SERIAL PRIMARY KEY,
+    code VARCHAR(50) UNIQUE NOT NULL,
+    discount_amount DECIMAL(10, 2) NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    valid_until TIMESTAMP
+);
+
 -- ORDERS TABLE: The primary receipt
 CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
@@ -138,14 +146,6 @@ CREATE TABLE review_images (
   review_id INTEGER REFERENCES reviews(id) ON DELETE CASCADE,
   image_url VARCHAR(255) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE coupons (
-    id SERIAL PRIMARY KEY,
-    code VARCHAR(50) UNIQUE NOT NULL,
-    discount_amount DECIMAL(10, 2) NOT NULL,
-    is_active BOOLEAN DEFAULT TRUE,
-    valid_until TIMESTAMP
 );
 
 CREATE TYPE activity_type AS ENUM ('auth', 'order', 'review', 'system', 'error');
