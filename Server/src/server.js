@@ -49,6 +49,14 @@ app.use('/api/buyer', buyerRoutes);
 app.use('/api/seller', sellerRoutes);
 app.use('/api/admin', adminRoutes);
 
+// ─── ROOT ROUTE ────────────────────────────────────────────
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to Bibliobazar API. API is accessible at /api'
+  });
+});
+
 // ─── 404 & ERROR HANDLERS ──────────────────────────────────
 app.use(notFound);
 app.use(errorHandler);
